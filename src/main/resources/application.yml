@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: pipa/mini-game-score
+server:
+  host: localhost
+  port: 8090
+  servlet:
+    context-path: /pipa/mini-game-score
+
+  #===Swagger Properties===#
+swagger:
+  api:
+    title: Score Mini Game
+    description: API para salvar e retornar score de usuários de um mini game
+    termsOfServiceUrl: https://www.pipastudios.com/
+    version: @project.version@
+    controller:
+      basepackage: br.com.pipa.controller
+
+
+control:
+  limit-output-list-score: 20
+
